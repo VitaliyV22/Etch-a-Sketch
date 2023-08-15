@@ -1,0 +1,19 @@
+.header {
+    text-align: center;
+    font-family: Architects Daughter ;
+}
+
+.footer {
+    text-align: center;
+    font-family: Architects Daughter;
+}
+
+.board {
+    width: 500px;
+    height: 500px;
+    display: grid;
+}
+
+.square {
+    background-color: blue;
+}
