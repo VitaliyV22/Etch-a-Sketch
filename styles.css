@@ -1,24 +1,44 @@
 .header {
-    text-align: center;
-    font-family: Architects Daughter ;
-    font-size: 30px;
+  text-align: center;
+  font-family: Architects Daughter;
+  font-size: 30px;
 }
 
 .footer {
-    text-align: center;
-    font-family: Architects Daughter;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+  font-family: Architects Daughter;
 }
 
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-    
 .board {
-    width: 500px;
-    height: 500px;
-    display: grid;
-    
+  width: 500px;
+  height: 500px;
+  display: grid;
+  border: solid black;
 }
 
 .square {
-    background-color: blue;
+  background-color: blue;
 }
 
+.input {
+  text-align: center;
+  
+}
+
+button {
+  font-family: Architects Daughter;
+}
