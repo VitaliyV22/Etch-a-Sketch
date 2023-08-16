@@ -1,5 +1,4 @@
-
-const clearBoard = document.querySelector(".clear")
+const button = document.querySelector(".button1")
 
 function createBoard(size) {
 
@@ -10,17 +9,20 @@ squares.forEach((div) => div.remove())
 board.style.gridTemplateColumns = `repeat(${size} , 1fr)`
 board.style.gridTemplateRows = `repeat(${size} , 1fr)`
 
+
+
 let amount = size * size
 for (let i=0 ; i < amount; i++) {
+    button.addEventListener("click", () => {
+        square.style.backgroundColor = 'blue'
+    })
     let square = document.createElement("div")
     square.style.backgroundColor = "blue"
     board.insertAdjacentElement("beforeend", square)
     square.addEventListener("mouseover", () => {
         square.style.backgroundColor = "white"
     })
-    
 }
-
 }
 
 createBoard(16)
@@ -35,9 +37,4 @@ function changeSize(input) {
 }
 
 
-function clear() {
-   clearBoard.addEventListener("click" , () => {
-    return createBoard() 
 
-   })
-}
